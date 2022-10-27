@@ -1,0 +1,29 @@
+.inner-wrapper {
+  display: flex;
+}
+.responsive-images {
+  display: flex;
+  flex: none;
+  overflow: auto;
+  gap: 16px;
+  padding-right: 8px;
+  width: 50%;
+  scroll-snap-type: x mandatory;
+  flex-flow: row nowrap;
+}
+.responsive-images > div {
+  width: 100%;
+  scroll-snap-align: center;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.image {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+.description {
+  width: 50%;
+}
