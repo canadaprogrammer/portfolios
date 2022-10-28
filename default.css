@@ -1,15 +1,32 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+.title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 38px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
 .inner-wrapper {
-  display: flex;
+  /* display: flex; */
 }
 .responsive-images {
   display: flex;
   flex: none;
   overflow: auto;
   gap: 16px;
-  padding-right: 8px;
-  width: 50%;
+  /* padding-right: 8px; */
+  /* width: 50%; */
   scroll-snap-type: x mandatory;
   flex-flow: row nowrap;
+  margin-bottom: 0.5rem;
 }
 .responsive-images > div {
   width: 100%;
@@ -20,10 +37,94 @@
   gap: 16px;
 }
 .image {
-  width: 100px;
-  height: 100px;
   background-color: blue;
 }
+
+.desktop .image {
+  width: 500px;
+  height: 281px;
+}
+.tablet .portrait {
+  width: 200px;
+  height: 280px;
+}
+.tablet .landscape {
+  width: 280px;
+  height: 200px;
+}
+.mobile .portrait {
+  width: 83.38px;
+  height: 148px;
+}
+.mobile .landscape {
+  width: 148px;
+  height: 83.38px;
+}
+
+@media only screen and (min-width: 992px) {
+  .desktop .image {
+    width: 940px;
+    height: 528.75px;
+  }
+  .tablet .portrait {
+    width: 376px;
+    height: 528.75px;
+  }
+  .tablet .landscape {
+    width: 528.75px;
+    height: 376px;
+  }
+  .mobile .portrait {
+    width: 156.67px;
+    height: 278.09px;
+  }
+  .mobile .landscape {
+    width: 278.09px;
+    height: 156.67px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  /* .desktop .image {
+    width: 630px;
+    height: 354px;
+  }
+  .tablet .portrait {
+    width: 252px;
+    height: 354px;
+  }
+  .tablet .landscape {
+    width: 354px;
+    height: 252px;
+  }
+  .mobile .portrait {
+    width: 105px;
+    height: 186px;
+  }
+  .mobile .landscape {
+    width: 186px;
+    height: 105px;
+  } */
+  .desktop .image {
+    width: 1200px;
+    height: 675px;
+  }
+  .tablet .portrait {
+    width: 480px;
+    height: 675px;
+  }
+  .tablet .landscape {
+    width: 675px;
+    height: 480px;
+  }
+  .mobile .portrait {
+    width: 200px;
+    height: 350px;
+  }
+  .mobile .landscape {
+    width: 350px;
+    height: 200px;
+  }
+}
 .description {
-  width: 50%;
+  /* width: 50%; */
 }
