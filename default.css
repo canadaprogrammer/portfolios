@@ -43,6 +43,10 @@ body {
 .desktop .image {
   width: 500px;
   height: 281px;
+  overflow: scroll;
+}
+.image img {
+  width: 100%;
 }
 .tablet .portrait {
   width: 200px;
